@@ -1,0 +1,172 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazir', sans-serif;
+}
+
+/* فونت */
+@font-face {
+    font-family: Vazir;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/Vazir.woff2') format('woff2'), 
+         url('fonts/Vazir.woff') format('woff'), 
+         url('fonts/Vazir.ttf') format('truetype');
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* تنظیمات کلی */
+body {
+    font-family: 'IRANSans', sans-serif;
+    background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* کانتینر لاگین */
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: popUp 0.8s ease-out;
+}
+
+.login-container h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #a8dadc;
+    position: relative;
+}
+
+.login-container h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #e63946;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* استایل فرم */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #e63946;
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.8);
+}
+
+form input[type="submit"] {
+    background: linear-gradient(90deg, #e63946, #f4a261);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+form input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(230, 57, 70, 0.6);
+}
+
+form input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* پیام خطا */
+.error {
+    color: #f8d7da;
+    background: #721c24;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* انیمیشن */
+@keyframes popUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* استایل ریسپانسیو */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px 20px;
+        max-width: 90%;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .login-container h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="submit"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
