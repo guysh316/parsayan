@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsian Header</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.fontstore.ir/fonts/Bonyad-Koodak/Bonyad-Koodak-FaNum.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="white">
+    <div class="container">
+        <!-- دکمه همبرگری -->
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+    
+        <header>
+            <!-- لوگو -->
+            <div class="logo">
+                <img src="assets/img/logo/logo.png" alt="Logo">
+                <div class="logo-text">
+                    <h1 data-lang-fa="پارسایان" data-lang-en="Parsian">پارسایان</h1>
+                    <p data-lang-fa="شرکت حمل و نقل بین المللی" data-lang-en="International Transport Company">شرکت حمل و نقل بین المللی</p>
+                </div>
+            </div>
+    
+            <!-- منو -->
+            <nav>
+                <ul class="menu">
+                    <li data-lang-fa="صفحه نخست" data-lang-en="Home" class="active" ><a href="index.html"> صفحه نخست </a></li>
+                    <li data-lang-fa="خدمات ما" data-lang-en="Our Services"><a href="servicecart.html"> خدمات ما </a></li>
+                    <li data-lang-fa="ارتباط با ما" data-lang-en="Contact Us"><a href="contact.html"> ارتباط با ما </a></li>
+                    <li data-lang-fa="درباره ما" data-lang-en="About Us"><a href="aboutus.html"> درباره ما </a></li>
+                    <li data-lang-fa=" بخش رانندگان " data-lang-en=" Drivers section "><a href="ComingSoon.html"> بخش رانندگان </a></li>
+                </ul>
+            </nav>
+    
+            <!-- تغییر زبان و شماره تماس -->
+            <div class="contact-lang">
+                <div class="phone">
+                    <span>0973726518</span>
+                    <img class="phone-icon" src="assets/img/icon-first/Rectangle 6.png" alt="phone">
+                    <img class="phone-i" src="assets/img/icon-first/phone.png" alt="phone">
+                </div>
+                <div class="lang-switcher" onclick="toggleDropdown()">
+                    <img id="arrow-icon" class="arrow-icon" src="assets/img/icon-first/down-arrow-5-svgrepo-com.svg" alt="arrow">
+                    <span id="current-lang">FA</span>
+                    <img class="globe-icon" src="assets/img/icon-first/globe-alt-1-svgrepo-com.svg" alt="globe">
+                    <div id="dropdown" class="dropdown">
+                        <span onclick="switchLanguage('EN')">EN</span>
+                        <span onclick="switchLanguage('FA')">FA</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</div>   
+    <div class="slash"></div>
+    
+
+    <div class="main-top-slider">
+        <div class="slide active">
+            <img src="assets/img/icon-first/hero.png" alt="اسلاید 1" class="desktop-image">
+            <div class="overlay">
+                <div class="text-content">
+                    <h2 
+                        data-lang-fa="پارسایان" 
+                        data-lang-en="Parsayan">
+                        پارسایان
+                    </h2>
+                    <p 
+                        data-lang-fa="با پارسایان، حمل‌ونقل را هوشمندانه تجربه کنید. ما با بهره‌گیری از فناوری روز و تیمی متخصص، مسیرها را برای شما کوتاه‌تر و مطمئن‌تر می‌کنیم." 
+                        data-lang-en="Experience smart transportation with Parsayan. Using modern technology and expert teams, we make your routes shorter and safer.">
+                        با پارسایان، حمل‌ونقل را هوشمندانه تجربه کنید. ما با بهره‌گیری از فناوری روز و تیمی متخصص، مسیرها را برای شما کوتاه‌تر و مطمئن‌تر می‌کنیم.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="slide">
+            <img src="assets/img/icon-first/hero.png" alt="اسلاید 2" class="desktop-image">
+            <div class="overlay">
+                <div class="text-content">
+                    <h2 
+                        data-lang-fa="پارسایان؛ هم‌مسیر توسعه" 
+                        data-lang-en="Parsayan: Partner in Progress">
+                        پارسایان؛ هم‌مسیر توسعه
+                    </h2>
+                    <p 
+                        data-lang-fa="پارسایان تنها یک شرکت حمل‌ونقل نیست، بلکه شریک تجاری شما در رشد و توسعه پایدار است. با ما، تجارت‌تان به حرکت درمی‌آید." 
+                        data-lang-en="Parsayan is not just a transportation company — it's your strategic partner for growth and sustainable development. With us, your business moves forward.">
+                        پارسایان تنها یک شرکت حمل‌ونقل نیست، بلکه شریک تجاری شما در رشد و توسعه پایدار است. با ما، تجارت‌تان به حرکت درمی‌آید.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="slide">
+            <img src="assets/img/icon-first/hero.png" alt="اسلاید 3" class="desktop-image">
+            <div class="overlay">
+                <div class="text-content">
+                    <h2 
+                        data-lang-fa="پارسایان؛ در هر لحظه کنار شما" 
+                        data-lang-en="Parsayan: By Your Side at Every Moment">
+                        پارسایان؛ در هر لحظه کنار شما
+                    </h2>
+                    <p 
+                        data-lang-fa="خدمات ۲۴ ساعته، پشتیبانی لحظه‌ای و ناوگان به‌روز، تنها بخشی از تعهد ما به مشتریان‌مان است. پارسایان، یعنی آرامش در مسیر." 
+                        data-lang-en="24/7 service, real-time support, and a modern fleet—just part of our commitment to you. Parsayan means peace of mind on the road.">
+                        خدمات ۲۴ ساعته، پشتیبانی لحظه‌ای و ناوگان به‌روز، تنها بخشی از تعهد ما به مشتریان‌مان است. پارسایان، یعنی آرامش در مسیر.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="slide">
+            <img src="assets/img/icon-first/hero.png" alt="اسلاید 4" class="desktop-image">
+            <div class="overlay">
+                <div class="text-content">
+                    <h2 
+                        data-lang-fa="پارسایان؛ رهبر حمل‌ونقل ریلی و جاده‌ای" 
+                        data-lang-en="Parsayan: Leader in Rail & Road Transport">
+                        پارسایان؛ رهبر حمل‌ونقل ریلی و جاده‌ای
+                    </h2>
+                    <p 
+                        data-lang-fa="پارسایان با تخصص در حمل‌ونقل ترکیبی، راه‌حل‌هایی جامع برای ارسال بار ارائه می‌دهد. امنیت، سرعت و دقت سه اصل بنیادین ما در خدمت‌رسانی هستند." 
+                        data-lang-en="Specialized in combined transport, Parsayan offers complete solutions for freight delivery. Safety, speed, and precision are our core values.">
+                        پارسایان با تخصص در حمل‌ونقل ترکیبی، راه‌حل‌هایی جامع برای ارسال بار ارائه می‌دهد. امنیت، سرعت و دقت سه اصل بنیادین ما در خدمت‌رسانی هستند.
+                    </p>
+                </div>
+            </div>
+        </div>      
+    
+        <button class="prev">
+            <img src="assets/img/icon-first/left.png" alt="قبلی">
+        </button>
+        <button class="next">
+            <img src="assets/img/icon-first/right.png" alt="بعدی">
+        </button>
+    
+        <div class="swiper-pagination">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>      
+    </div>
+    
+    
+    <h2 class="services-title" data-lang-fa="خدمات پارسایان" data-lang-en="Parsayan Services">خدمات پارسایان</h2>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="truck.html">
+                    <div class="slide-container">
+                        <img src="assets/img/service-slide/truck.png" alt="Image 1" />
+                        <h2 class="text-down" data-lang-fa="ارسال بار زمینی" data-lang-en="Ground Shipping"> ارسال بار زمینی </h2>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="ship.html">
+                    <div class="slide-container">
+                        <img src="assets/img/service-slide/ship.png" alt="Image 2" />
+                        <h2 class="text-down" data-lang-fa="ارسال بار دریایی" data-lang-en="Sea Freight"> ارسال بار دریایی </h2>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="airplane.html">
+                    <div class="slide-container">
+                        <img src="assets/img/service-slide/airplane.png" alt="Image 3" />
+                        <h2 class="text-down" data-lang-fa="ارسال بار هوایی" data-lang-en="Air Freight"> ارسال بار هوایی </h2>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="varedat.html">
+                    <div class="slide-container">
+                        <img src="assets/img/service-slide/varedat.png" alt="Image 4" />
+                        <h2 class="text-down" data-lang-fa="واردات" data-lang-en="Import"> واردات </h2>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="saderat.html">
+                    <div class="slide-container">
+                        <img src="assets/img/service-slide/saderat.png" alt="Image 5" />
+                        <h2 class="text-down" data-lang-fa="صادرات" data-lang-en="Export"> صادرات </h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <div class="swiper-button-next custom-next"></div>
+        <div class="swiper-button-prev custom-prev"></div>
+    </div>    
+    
+
+
+
+
+<div class="section">
+    <h2 class="section-text"
+        data-lang-fa="چرا پارسایان؟"
+        data-lang-en="?Why Parsayan">
+        چرا پارسایان؟
+    </h2>
+    
+    <p
+        data-lang-fa="نزدیک به 30 سال تجربه موفق در اجرای پروژه‌های واردات و صادرات انواع کالا"
+        data-lang-en="Nearly 30 years of successful experience in import and export projects of various goods">
+        نزدیک به <span>30 سال</span> تجربه موفق در اجرای پروژه‌های واردات و صادرات انواع کالا
+    </p>
+
+    <div class="list-container">
+        <ul class="list">
+            <li 
+                data-lang-fa="قابلیت ارائه خدمات در سطح بین‌المللی"
+                data-lang-en="Ability to provide services on an international level">
+                قابلیت ارائه خدمات در سطح بین‌المللی
+            </li>
+            <div class="slash2"></div>
+            <li 
+                data-lang-fa="تیم کارشناسی مجرب، چند زبانه با اشراف به قوانین بازرگانی"
+                data-lang-en="Experienced, multilingual expert team familiar with trade regulations">
+                تیم کارشناسی مجرب، چند زبانه با اشراف به قوانین بازرگانی
+            </li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="list2">
+            <li 
+                data-lang-fa="دارای ارتباطات گسترده و شرکای تجاری قابل اعتماد در سراسر دنیا"
+                data-lang-en="Extensive network and reliable business partners around the world">
+                دارای ارتباطات گسترده و شرکای تجاری قابل اعتماد در سراسر دنیا
+            </li>
+            <div class="slash2"></div>
+            <li 
+                data-lang-fa="اجرای موفق بیش از 1000 پروژه"
+                data-lang-en="Successfully completed over 1000 projects">
+                اجرای موفق بیش از 1000 پروژه
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="consultation-container">
+    <div class="consultation-box">
+      <img src="assets/img/service-slide/Advice.png" 
+           alt="تصویر مشاوره" 
+           class="consultation-image"
+           data-lang-fa-alt="تصویر مشاوره"
+           data-lang-en-alt="Consultation Image">
+      
+      <div class="consultation-text">
+        <h1 data-lang-fa="نیاز به مشاوره دارید؟ با ما تماس باشید!" 
+            data-lang-en="!Need consultation? Contact us">
+            نیاز به مشاوره دارید؟ با ما تماس باشید!
+        </h1>
+        <p data-lang-fa="کادر حرفه‌ای و تخصصی شرکت حمل و نقل بین‌المللی پارسایان آماده راهنمایی شما عزیزان می‌باشد." 
+           data-lang-en="The professional and specialized team of Parsian International Transport Company is ready to guide you">
+           کادر حرفه‌ای و تخصصی شرکت حمل و نقل بین‌المللی پارسایان آماده راهنمایی شما عزیزان می‌باشد.
+        </p>
+        <a href="#" class="consultation-btn">
+          <span data-lang-fa="دریافت مشاوره" data-lang-en="Get Consultation">دریافت مشاوره</span>
+          <img src="assets/img/icon-first/red-left.png" 
+               alt="آیکون مشاوره"
+               data-lang-fa-alt="آیکون مشاوره"
+               data-lang-en-alt="Consultation Icon">
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  
+    
+    
+    <div class="faq-container">
+        <h2 data-lang-fa="سوالات متداول" data-lang-en="Frequently Asked Questions">سوالات متداول</h2>
+    
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)" 
+                 data-lang-fa="حمل و نقل بین المللی چیست؟"
+                 data-lang-en="?What is international transportation">
+                حمل و نقل بین المللی چیست؟
+            </div>
+            <div class="faq-answer">
+                <p 
+                    data-lang-fa="حمل و نقل بین المللی به فرآیند انتقال کالاها و محموله ها از یک کشور به کشور دیگر در مقیاس جهانی اشاره دارد. این فرآیند شامل حرکت کالاها از یک مبدا به یک مقصد دورتر و قابل تفاوت جغرافیایی است. حمل و نقل بین المللی شامل روش های مختلف مانند حمل و نقل هوایی، حمل و نقل دریایی، حمل و نقل زمینی و حمل و نقل ترکیبی است." 
+                    data-lang-en="International transportation refers to the process of transferring goods and cargo from one country to another on a global scale. It includes the movement of items from an origin to a distant geographical destination and involves methods such as air, sea land and multimodal transport">
+                    حمل و نقل بین المللی به فرآیند انتقال کالاها و محموله ها از یک کشور به کشور دیگر در مقیاس جهانی اشاره دارد. این فرآیند شامل حرکت کالاها از یک مبدا به یک مقصد دورتر و قابل تفاوت جغرافیایی است. حمل و نقل بین المللی شامل روش های مختلف مانند حمل و نقل هوایی، حمل و نقل دریایی، حمل و نقل زمینی و حمل و نقل ترکیبی است.
+                </p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)"
+                 data-lang-fa="شرکت حمل و نقل بین المللی معتبر چه خدماتی ارائه می دهد؟"
+                 data-lang-en="?What services does a reputable international transport company offer">
+                شرکت حمل و نقل بین المللی معتبر چه خدماتی ارائه می دهد؟
+            </div>
+            <div class="faq-answer">
+                <p 
+                    data-lang-fa="شرکت های معتبر خدماتی از قبیل حمل سریع، بسته بندی ایمن، پیگیری لحظه به لحظه، و پشتیبانی ۲۴ ساعته ارائه می دهند."
+                    data-lang-en="Reputable companies offer services such as fast delivery secure packaging real-time tracking and 24/7 customer support.">
+                    شرکت های معتبر خدماتی از قبیل حمل سریع، بسته بندی ایمن، پیگیری لحظه به لحظه، و پشتیبانی ۲۴ ساعته ارائه می دهند.
+                </p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)"
+                 data-lang-fa="بزرگترین شرکت حمل و نقل بین المللی در ایران"
+                 data-lang-en="?What is the largest international transport company in Iran">
+                بزرگترین شرکت حمل و نقل بین المللی در ایران
+            </div>
+            <div class="faq-answer">
+                <p 
+                    data-lang-fa="در ایران، شرکت های بزرگی در حوزه حمل و نقل بین المللی فعالیت دارند که بر اساس نوع خدمات و گستره کار شناخته شده اند."
+                    data-lang-en="In Iran several major international transport companies operate known for their range of services and operational scope.">
+                    در ایران، شرکت های بزرگی در حوزه حمل و نقل بین المللی فعالیت دارند که بر اساس نوع خدمات و گستره کار شناخته شده اند.
+                </p>
+            </div>
+        </div>
+    </div>    
+
+
+    <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <img src="assets/img/footer/Logo.png" alt="Parsayan Logo">
+        </div>
+      
+        <!-- Black background area -->
+        <div class="footer-background">
+      
+          <!-- Right section: Navigation and copyright -->
+          <div class="footer-right">
+            <div class="footer-nav">
+              <a href="#"
+                 data-lang-fa="خدمات ما"
+                 data-lang-en="Our Services">خدمات ما</a>
+              <span>|</span>
+              <a href="#"
+                 data-lang-fa="تماس با ما"
+                 data-lang-en="Contact Us">تماس با ما</a>
+              <span>|</span>
+              <a href="#"
+                 data-lang-fa="درباره ما"
+                 data-lang-en="About Us">درباره ما</a>
+              <span>|</span>
+              <a href="#"
+                 data-lang-fa="همکاری با ما"
+                 data-lang-en="Join Us">همکاری با ما</a>
+            </div>
+            <div class="footer-copyright"
+                 data-lang-fa="© تمامی حقوق این سایت متعلق به پارسیان می‌باشد."
+                 data-lang-en="© All rights reserved to Parsayan.">
+              © تمامی حقوق این سایت متعلق به پارسیان می‌باشد.
+            </div>
+          </div>
+      
+          <!-- Left section: Social icons and email -->
+          <div class="footer-left">
+            <div class="social-icons">
+              <a href="#"><img src="assets/img/footer/whatsapp.png" alt="WhatsApp"/></a>
+              <a href="#"><img src="assets/img/footer/youtube.png" alt="YouTube"/></a>
+              <a href="#"><img src="assets/img/footer/twiter.png" alt="Twitter"/></a>
+              <a href="#"><img src="assets/img/footer/instagram.png" alt="Instagram"/></a>
+            </div>
+            <div class="footer-email">parsayan@gmail.com</div>
+          </div>
+      
+        </div>
+      </div>
+      
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/java script/script.js"></script>
+</body>
+</html>

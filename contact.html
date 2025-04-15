@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsian Header</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link href="https://cdn.fontstore.ir/fonts/Bonyad-Koodak/Bonyad-Koodak-FaNum.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="white">
+    <div class="container">
+        <!-- دکمه همبرگری -->
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+    
+        <header>
+            <!-- لوگو -->
+            <div class="logo">
+                <img src="assets/img/logo/logo.png" alt="Logo">
+                <div class="logo-text">
+                    <h1 data-lang-fa="پارسایان" data-lang-en="Parsian">پارسایان</h1>
+                    <p data-lang-fa="شرکت حمل و نقل بین المللی" data-lang-en="International Transport Company">شرکت حمل و نقل بین المللی</p>
+                </div>
+            </div>
+    
+            <!-- منو -->
+            <nav>
+                <ul class="menu">
+                    <li data-lang-fa="صفحه نخست" data-lang-en="Home" class="up" ><a href="index.html"> صفحه نخست </a></li>
+                    <li data-lang-fa="خدمات ما" data-lang-en="Our Services"><a href="servicecart.html"> خدمات ما </a></li>
+                    <li data-lang-fa="ارتباط با ما" data-lang-en="Contact Us" class="active"><a href="contact.html"> ارتباط با ما </a></li>
+                    <li data-lang-fa="درباره ما" data-lang-en="About Us"><a href="aboutus.html"> درباره ما </a></li>
+                    <li data-lang-fa=" بخش رانندگان " data-lang-en=" Drivers section "><a href="ComingSoon.html"> بخش رانندگان </a></li>
+                </ul>
+            </nav>
+    
+            <!-- تغییر زبان و شماره تماس -->
+            <div class="contact-lang">
+                <div class="phone">
+                    <span>0973726518</span>
+                    <img class="phone-icon" src="assets/img/icon-first/Rectangle 6.png" alt="phone">
+                    <img class="phone-i" src="assets/img/icon-first/phone.png" alt="phone">
+                </div>
+                <div class="lang-switcher" onclick="toggleDropdown()">
+                    <img id="arrow-icon" class="arrow-icon" src="assets/img/icon-first/down-arrow-5-svgrepo-com.svg" alt="arrow">
+                    <span id="current-lang">FA</span>
+                    <img class="globe-icon" src="assets/img/icon-first/globe-alt-1-svgrepo-com.svg" alt="globe">
+                    <div id="dropdown" class="dropdown">
+                        <span onclick="switchLanguage('EN')">EN</span>
+                        <span onclick="switchLanguage('FA')">FA</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</div>   
+    <div class="slash"></div>
+
+    <div class="parsayan-section">
+        <div class="container">
+            <div class="text-section">
+                <h1>
+                    <span data-lang-fa="پارسایان" data-lang-en="Parsayan">پارسایان</span>
+                </h1>
+                <p>
+                    <span data-lang-fa="با ارائه راهکارهای مدرن حمل و نقل، تضمین‌کننده ارسال سریع، ایمن و مطمئن بارهای شماست. با ما به سرعت به مقصد برسید."
+                          data-lang-en="With modern transportation solutions, we guarantee the fast, safe, and reliable delivery of your shipments. Reach your destination swiftly with us.">
+                        با ارائه راهکارهای مدرن حمل و نقل، تضمین‌کننده ارسال سریع، ایمن و مطمئن بارهای شماست. با ما به سرعت به مقصد برسید.
+                    </span>
+                </p>
+                <a href="#" class="button">
+                    <span data-lang-fa="درباره ما" data-lang-en="About Us">درباره ما</span>
+                </a>
+            </div>
+            <div class="image-section">
+                <img src="assets/img/contact/pic.png" alt="contact">
+            </div>
+        </div>
+    </div>    
+
+
+    <div class="new-container">
+        <div class="new-contact-form">
+            <h2>
+                <span data-lang-fa="پیام خود را ارسال نمایید" data-lang-en="Send Your Message">پیام خود را ارسال نمایید</span>
+            </h2>
+            <form id="newContactForm">
+                <label for="newName">
+                    <span data-lang-fa="نام و نام خانوادگی *" data-lang-en="Full Name *">نام و نام خانوادگی *</span>
+                </label>
+                <input type="text" id="newName" name="newName" required>
+    
+                <label for="newEmail">
+                    <span data-lang-fa="ایمیل *" data-lang-en="Email *">ایمیل *</span>
+                </label>
+                <input type="email" id="newEmail" name="newEmail" required>
+    
+                <label for="newPhone">
+                    <span data-lang-fa="شماره تماس *" data-lang-en="Phone Number *">شماره تماس *</span>
+                </label>
+                <input type="text" id="newPhone" name="newPhone" required>
+    
+                <label for="newMessage">
+                    <span data-lang-fa="توضیحات *" data-lang-en="Message *">توضیحات *</span>
+                </label>
+                <textarea id="newMessage" name="newMessage" required></textarea>
+    
+                <button type="submit">
+                    <span data-lang-fa="ارسال پیام" data-lang-en="Send Message">ارسال پیام</span>
+                </button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+    
+        <div class="new-contact-info">
+            <h2 class="phoner">
+                <span data-lang-fa="مشخصات تماس با ما" data-lang-en="Contact Information">مشخصات تماس با ما</span>
+            </h2>
+            <p>
+                <img src="assets/img/contact/location.png"/>
+                <span data-lang-fa="ابتدای خیابان مطهری - خیابان منصور - پلاک ۱۹ - ساختمان تکسیز لجستیک"
+                      data-lang-en="Beginning of Motahari St. - Mansour St. - No. 19 - Taksiz Logistics Building">
+                    ابتدای خیابان مطهری - خیابان منصور - پلاک ۱۹ - ساختمان تکسیز لجستیک
+                </span>
+            </p>
+            <div class="new-contact-details">
+                <div>
+                    <i class="new-icon"><img src="assets/img/contact/phone.png"/></i>
+                    <span>09144199905 | 09145008908</span>
+                </div>
+                <div>
+                    <i class="new-icon"><img src="assets/img/contact/fax.png"/></i>
+                    <span>041-32424619 | 041-32424521</span>
+                </div>
+                <div>
+                    <i class="new-icon"><img src="assets/img/contact/email.png"/></i>
+                    <span>info@parsayan.com</span>
+                </div>
+            </div>
+            <div class="new-social-icons">
+                <i class="new-icon"><img src="assets/img/contact/whatsapp.png"/></i>
+                <i class="new-icon"><img src="assets/img/contact/youtube.png"/></i>
+                <i class="new-icon"><img src="assets/img/contact/twiter.png"/></i>
+                <i class="new-icon"><img src="assets/img/contact/instagram.png"/></i>
+            </div>
+            <div class="new-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.7623811315023!2d51.3889739!3d35.6891978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f907d5f0b2d37b7%3A0x9f0b0fcbf3c9a1e8!2sShahid%20Zeynoddin%20Expressway%2C%20Tehran%2C%20Iran!5e0!3m2!1sen!2sus!4v1697928762006!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <img src="assets/img/footer/Logo.png" alt="Parsayan Logo">
+        </div>
+      
+        <!-- Black background area -->
+        <div class="footer-background">
+      
+          <!-- Right section: Navigation and copyright -->
+          <div class="footer-right">
+            <div class="footer-nav">
+              <a href="#"
+                 data-lang-fa="خدمات ما"
+                 data-lang-en="Our Services">خدمات ما</a>
+              <span>|</span>
+              <a href="#"
+                 data-lang-fa="تماس با ما"
+                 data-lang-en="Contact Us">تماس با ما</a>
+              <span>|</span>
+              <a href="#"
+                 data-lang-fa="درباره ما"
+                 data-lang-en="About Us">درباره ما</a>
+              <span>|</span>
+              <a href="#"
+                 data-lang-fa="همکاری با ما"
+                 data-lang-en="Join Us">همکاری با ما</a>
+            </div>
+            <div class="footer-copyright"
+                 data-lang-fa="© تمامی حقوق این سایت متعلق به پارسیان می‌باشد."
+                 data-lang-en="© All rights reserved to Parsayan.">
+              © تمامی حقوق این سایت متعلق به پارسیان می‌باشد.
+            </div>
+          </div>
+      
+          <!-- Left section: Social icons and email -->
+          <div class="footer-left">
+            <div class="social-icons">
+              <a href="#"><img src="assets/img/footer/whatsapp.png" alt="WhatsApp"/></a>
+              <a href="#"><img src="assets/img/footer/youtube.png" alt="YouTube"/></a>
+              <a href="#"><img src="assets/img/footer/twiter.png" alt="Twitter"/></a>
+              <a href="#"><img src="assets/img/footer/instagram.png" alt="Instagram"/></a>
+            </div>
+            <div class="footer-email">parsayan@gmail.com</div>
+          </div>
+      
+        </div>
+      </div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="assets/java script/contact.js"></script>
+</body>
+</html>
