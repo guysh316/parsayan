@@ -523,7 +523,7 @@ nav ul li.active::after {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 525px;
+    gap: 400px;
     justify-content: center;
 }
 
@@ -555,7 +555,7 @@ nav ul li.active::after {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 525px;
+    gap: 407px;
     justify-content: center;
 }
 
@@ -564,7 +564,8 @@ nav ul li.active::after {
     font-size: 15px;
     position: relative;
     padding-right: 20px;
-    margin-right: -158px;
+    margin-right: -161px;
+    margin-left: 3px;
 }
 
 .list2 li::before {
