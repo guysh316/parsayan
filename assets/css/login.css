@@ -170,3 +170,9 @@ form input[type="submit"]:active {
         padding: 8px;
     }
 }
+
+
+.whatsapp{
+    width: 20px !important;
+    margin-bottom: -4px;
+}

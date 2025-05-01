@@ -1392,3 +1392,9 @@ nav ul li.active::after {
             padding: 0;
         }
     }
+
+
+    .whatsapp{
+        width: 20px !important;
+        margin-bottom: -4px;
+    }

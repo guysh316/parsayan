@@ -458,6 +458,16 @@ h3 .second {
   /* ریسپانسیو */
 
 
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    .gallery img {
+        width: 700px;
+        margin-right: 170px;
+        margin-top: 20px;
+        margin-left: 210px;
+    }
+}
+
+
 
     /* استایل لوگو */
     .logo {
@@ -502,6 +512,8 @@ h3 .second {
         opacity: 1;
         z-index: 100;
     }
+
+
 
     /* ریسپانسیو */
     @media (max-width: 768px) {
@@ -890,4 +902,10 @@ h3 .second {
             right: 109px;
             bottom: 144px;
         }
+    }
+
+
+    .whatsapp{
+        width: 20px !important;
+        margin-bottom: -4px;
     }
